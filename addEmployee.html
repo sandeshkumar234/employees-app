@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="addEmployee.css" />
+    <title>Employee management system</title>
+  </head>
+  <body>
+    <main>
+      <form class="form" id="employeeForm">
+        <h2 class="form-title">Fill Form to make friends</h2>
+
+        <label for="name" class="form-label">Name:</label>
+        <input
+          type="text"
+          class="form-input"
+          placeholder="Enter your name (alphabets only)"
+          name="name"
+          id="name"
+          required
+        />
+
+        <label for="age" class="form-label">Age:</label>
+        <input
+          type="number"
+          name="age"
+          placeholder="Enter your age (18+)"
+          id="age"
+          class="form-input"
+          required
+          pattern=" /^(1[89]|[2-9]\d|\d{3,})$/"
+        />
+
+        <label for="country" class="form-label">Country:</label>
+        <input
+          type="text"
+          id="country"
+          class="form-input"
+          name="country"
+          placeholder="Enter your country name (alphabets only)"
+          required
+        />
+
+        <label for="contact" class="form-label">Contact:</label>
+        <input
+          type="tel"
+          id="contact"
+          name="contact"
+          class="form-input"
+          placeholder="Enter your contact number (numbers only)"
+          required
+        />
+
+        <label for="designation" class="form-label">Designation:</label>
+        <input
+          type="text"
+          id="designation"
+          name="designation"
+          class="form-input"
+          placeholder="Enter your designation"
+          required
+        />
+
+        <button class="submit-btn" type="submit">Submit</button>
+      </form>
+    </main>
+
+    <script src="addEmployee.js"></script>
+  </body>
+</html>
