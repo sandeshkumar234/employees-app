@@ -41,7 +41,7 @@ function handleSubmit(event) {
   console.log(employee);
 
   storeEmployeeInLocalStorage(employee);
-  window.location.href = "../index.html";
+  window.location.href = "index.html";
 }
 
 const form = document.querySelector("form");
